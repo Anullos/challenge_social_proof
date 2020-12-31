@@ -1,11 +1,253 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+.gridtop {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  padding: 0 8em;
+  margin-top: 5.5em;
+}
+
+.titulo {
+  width: 380px;
+  color: #502050;
+  font-size: 1.2em;
+}
+
+.titulo h1 {
+  line-height: 35px;
+  margin: 0;
+}
+
+.titulo p {
+  color: #937b92;
+  font-size: 0.7em;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.rated {
+  text-align: end;
+  margin-right: 2em;
+}
+
+.cardStar1 {
+  padding: 0.2em 0;
+  width: 380px;
+  background-color: #f7f2f7;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  margin: 0.4em 7em;
+  border-radius: 5px;
+}
+
+.cardStar2 {
+  padding: 0.2em 0;
+  width: 380px;
+  background-color: #f7f2f7;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  margin: 0.4em 4em;
+  border-radius: 5px;
+}
+
+.cardStar3 {
+  padding: 0.2em 0;
+  width: 380px;
+  background-color: #f7f2f7;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  margin: 0.4em 1em;
+  border-radius: 5px;
+}
+
+.estrellas {
+  margin: 0 2em;
+}
+
+.estrellas img {
+  width: 14px;
+}
+
+.cardStar1 p,
+.cardStar2 p,
+.cardStar3 p {
+  color: #502050;
+  font-weight: 700;
+  font-size: 0.7em;
+}
+
+@media screen and (max-width: 768px) {
+  .gridtop {
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 2em;
+    margin-top: 5.5em;
+  }
+
+  .titulo {
+    margin: auto;
+  }
+
+  .rated {
+    text-align: center;
+    margin: 0;
+  }
+
+  .cardStar1 {
+    padding: 0.2em 0;
+    width: 340px;
+    background-color: #f7f2f7;
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+  }
+
+  .cardStar2 {
+    padding: 0.2em 0;
+    width: 340px;
+    background-color: #f7f2f7;
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1em auto;
+  }
+
+  .cardStar3 {
+    padding: 0.2em 0;
+    width: 340px;
+    background-color: #f7f2f7;
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+  }
+}
+.griddown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5em;
+  padding: 0 8em;
+  margin-top: 3em;
+}
+
+.cardDown1 {
+  padding-top: 1em;
+  width: 340px;
+  height: 200px;
+  background-color: #502050;
+  border-radius: 10px;
+}
+
+.cardDown2 {
+  padding-top: 1em;
+  margin-top: 1.5em;
+  width: 340px;
+  height: 200px;
+  background-color: #502050;
+  border-radius: 10px;
+}
+
+.cardDown3 {
+  padding-top: 1em;
+  margin-top: 3em;
+  width: 340px;
+  height: 200px;
+  background-color: #502050;
+  border-radius: 10px;
+}
+
+.header1 {
+  display: grid;
+  grid-template-columns: 25% 80%;
+  justify-content: center;
+  align-content: center;
+  margin: 1.5em 2.5em;
+}
+
+.header1 img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border-radius: 50%;
+  width: 40px;
+}
+
+.nombre {
+  margin: 0;
+  color: white;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  align-self: center;
+}
+
+.subnombre {
+  margin: 0.5em 0;
+  color: #ee68a4;
+  grid-column: 2/2;
+  grid-row: 2/2;
+  font-size: 0.8em;
+}
+
+.descripcion {
+  margin: 0;
+  color: white;
+  padding: 0 3em;
+  font-size: 0.7em;
+  padding-bottom: 2em;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 768px) {
+  .griddown {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    margin-top: 3em;
+  }
+
+  .cardDown1 {
+    padding-top: 1em;
+    width: 340px;
+    height: 200px;
+    background-color: #502050;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin: auto;
+  }
+
+  .cardDown2 {
+    padding-top: 1em;
+    margin-top: 0;
+    width: 340px;
+    height: 200px;
+    background-color: #502050;
+    border-radius: 10px;
+    margin: auto;
+  }
+
+  .cardDown3 {
+    padding-top: 1em;
+    margin-top: 0;
+    width: 340px;
+    height: 200px;
+    background-color: #502050;
+    border-radius: 10px;
+    margin: auto;
+  }
+}
 :root {
-  --darkCyan: hsl(185, 75%, 39%);
-  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
-  --darkGrayishBlue: hsl(227, 10%, 46%);
-  --darkGray: hsl(0, 0%, 59%);
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 18px;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background-color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

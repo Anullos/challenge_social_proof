@@ -1,0 +1,109 @@
+.griddown {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
+    padding: 0 8em;
+    margin-top: 3em;
+}
+
+.cardDown1 {
+    padding-top: 1em;
+    width: 340px;
+    height: 200px;
+    background-color: $veryDarkMagenta;
+    border-radius: 10px;
+}
+
+.cardDown2 {
+    padding-top: 1em;
+    margin-top: 1.5em;
+    width: 340px;
+    height: 200px;
+    background-color: $veryDarkMagenta;
+    border-radius: 10px;
+}
+
+.cardDown3 {
+    padding-top: 1em;
+    margin-top: 3em;
+    width: 340px;
+    height: 200px;
+    background-color: $veryDarkMagenta;
+    border-radius: 10px;
+}
+
+.header1 {
+    display: grid;
+    grid-template-columns: 25% 80%;
+    justify-content: center;
+    align-content: center;
+    margin: 1.5em 2.5em;
+}
+
+.header1 img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.nombre {
+    margin: 0;
+    color: $white;
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+}
+
+.subnombre {
+    margin: 0.5em 0;
+    color: $softPink;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    font-size: 0.8em;
+}
+
+.descripcion {
+    margin: 0;
+    color: $white;
+    padding: 0 3em;
+    font-size: 0.7em;
+    padding-bottom: 2em;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 768px) {
+    .griddown {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        margin-top: 3em;
+    }
+    .cardDown1 {
+        padding-top: 1em;
+        width: 340px;
+        height: 200px;
+        background-color: $veryDarkMagenta;
+        border-radius: 10px;
+        margin-left: 100px;
+        margin: auto;
+    }
+    .cardDown2 {
+        padding-top: 1em;
+        margin-top: 0;
+        width: 340px;
+        height: 200px;
+        background-color: $veryDarkMagenta;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .cardDown3 {
+        padding-top: 1em;
+        margin-top: 0;
+        width: 340px;
+        height: 200px;
+        background-color: $veryDarkMagenta;
+        border-radius: 10px;
+        margin: auto;
+    }
+}
